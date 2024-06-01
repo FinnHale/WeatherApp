@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App Ui Design</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="slider-thumb"></div>
+    <div class="container">
+        <div class="left-info"> 
+            <div class="pic-gradient"></div>
+            <div class="today-info">
+                <h2 id="date"></h2>
+                <span id="current-date"></span>
+                <div>
+                    <i class='bx bx-current-location'></i>
+                    <span id="location">Paris, FR</span>
+                </div>
+            </div>
+            <div class="today-weather">
+                <i class='bx bx-sun' id="weather-icon"></i>
+                <h1 class="weather-temp">
+                    <span id="temperature">25</span>°C
+                </h1>
+                <h3 id="weather-description">Sunny</h3>
+            </div>
+        </div>
+    
+        <div class="right-info">
+            <div class="day-info">
+                <div>
+                    <span class="title">PRECIPITATION</span>
+                    <span class="value"  id="precipitation">4 %</span>
+                </div>
+                <div>
+                    <span class="title">HUMIDITY</span>
+                    <span class="value" id="humidity">34 %</span>
+                </div>
+                <div>
+                    <span class="title">WIND SPEED</span>
+                    <span class="value" id="wind-speed">6 km/h</span>
+                </div>
+            </div>
+    
+            <ul class="days-list">
+                
+            </ul>
+    
+            <div class="btn-container">
+              <div class="search-container">
+                <input type="text" id="search-input" placeholder="Enter city name...">
+                <button onclick="searchLocation()">
+                  <i class="bx bx-search"></i>
+                </button>
+              </div>
+            </div>    
+        </div>    
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
